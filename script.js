@@ -57,7 +57,6 @@ while (favAnimal != "tiger" && favAnimal != "lion" && favAnimal != "jaguar") {
 document.write("<img src='ltj.jpg'/>");
 
 
-
 var x = prompt("how many stars do you rate my website from 0-5?"); {
   for (var i = 0; i < 5; i++) {
     var output =''
