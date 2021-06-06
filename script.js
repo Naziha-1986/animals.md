@@ -112,6 +112,7 @@ if (r == true) {
 
 
 
+
 console.log(add(4,1));
 //result will be 5
 function add(x,y){
@@ -138,6 +139,7 @@ var subOutput = sub(firstNum,secondNum);
 //10-5=5
 console.log(addOutput,subOutput);
 //in console will display 15 & 5
+
 
 
 
