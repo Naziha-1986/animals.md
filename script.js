@@ -47,43 +47,49 @@ if (useryear == 1986) {
 
 
 
-<<<<<<< HEAD
+
 var favAnimal = prompt(" what is your favorite animal from : tiger, lion, jaguar");
 
 while (favAnimal != "tiger" && favAnimal != "lion" && favAnimal != "jaguar") {
   favAnimal = prompt("please enter on of :tiger , lion , jaguar");
 }
 
-document.write("<img src='ltj.jpg'/>")
+document.write("<img src='ltj.jpg'/>");
+
 
 
 var x = prompt("how many stars do you rate my website from 0-5?"); {
   for (var i = 0; i < 5; i++) {
+    var output =''
     while (x != "1" && x != "2" && x != "3" && x != "4" && x != "5") {
       x = prompt("please enter from 0-5");
-      document.write("<img scr='star.png'/>"); i++;
+      output = output + "<img src='star.png' />";
+       console.log(i, "hi", x);
     }
 
   }
-  console.log(i, "hi", x);
-
+  
+  
 }
 
 
+var x = prompt("how many times do you want to see a star image ?")
 
+var starsFun = function () {
+  var output = '';
+  var i = 0;
+  while (i < x) {
 
+    output = output + "<img src='star.png' />"
 
+    console.log(i, output)
 
-=======
-  var favAnimal = prompt(" what is your favorite animal from : tiger, lion, jaguar");
- 
-    while (favAnimal != "tiger" && favAnimal != "lion" && favAnimal != "jaguar"){
-      favAnimal = prompt("please enter on of :tiger , lion , jaguar");
-    }
-  
-    document.write("<img src='ltj.jpg'/>")
->>>>>>> 83d874efcb5fd1e1283b6bc6480335eb654fe1cb
+    i++;
+  }
 
+  return output;
+
+}
 
 
 
@@ -97,4 +103,10 @@ if (r == true) {
   pressabutton = "You pressed Cancel!";
 
 }
+
+for(var i=0 ;i<5;i++){
+    console.log(i)
+   console.log(i<5);
+    document.write("<<img src='star.png' />");
+ }
 
