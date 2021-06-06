@@ -47,6 +47,7 @@ if (useryear == 1986) {
 
 
 
+<<<<<<< HEAD
 var favAnimal = prompt(" what is your favorite animal from : tiger, lion, jaguar");
 
 while (favAnimal != "tiger" && favAnimal != "lion" && favAnimal != "jaguar") {
@@ -73,6 +74,15 @@ var x = prompt("how many stars do you rate my website from 0-5?"); {
 
 
 
+=======
+  var favAnimal = prompt(" what is your favorite animal from : tiger, lion, jaguar");
+ 
+    while (favAnimal != "tiger" && favAnimal != "lion" && favAnimal != "jaguar"){
+      favAnimal = prompt("please enter on of :tiger , lion , jaguar");
+    }
+  
+    document.write("<img src='ltj.jpg'/>")
+>>>>>>> 83d874efcb5fd1e1283b6bc6480335eb654fe1cb
 
 
 
