@@ -49,26 +49,33 @@ if (useryear == 1986) {
 
 
 var favAnimal = prompt(" what is your favorite animal from : tiger, lion, jaguar");
+function favAnimalFun() {
+  while (favAnimal != "tiger" && favAnimal != "lion" && favAnimal != "jaguar") {
+    favAnimal = prompt("please enter on of :tiger , lion , jaguar");
+  }
 
-while (favAnimal != "tiger" && favAnimal != "lion" && favAnimal != "jaguar") {
-  favAnimal = prompt("please enter on of :tiger , lion , jaguar");
+  document.write("<img src='ltj.jpg'/>");
+  if (favAnimal == "tiger" || favAnimal == "lion" || favAnimal == "jaguar") {
+    console.log(favAnimal);
+  } else {
+    favAnimal = ("please enter on of :tiger , lion , jaguar");
+    console.log(favAnimal);
+  }
 }
 
-document.write("<img src='ltj.jpg'/>");
-
-
+favAnimalFun();
 var x = prompt("how many stars do you rate my website from 0-5?"); {
   for (var i = 0; i < 5; i++) {
-    var output =''
+    var output = ''
     while (x != "1" && x != "2" && x != "3" && x != "4" && x != "5") {
       x = prompt("please enter from 0-5");
       output = output + "<img src='star.png' />";
-       console.log(i, "hi", x);
+      console.log(i, "hi", x);
     }
 
   }
-  
-  
+
+
 }
 
 
@@ -91,11 +98,11 @@ var starsFun = function () {
 }
 
 
-for(var i=0 ;i<5;i++){
-    console.log(i)
-   console.log(i<5);
-    document.write("<<img src='star.png' />");
- }
+for (var i = 0; i < 5; i++) {
+  console.log(i)
+  console.log(i < 5);
+  document.write("<<img src='star.png' />");
+}
 
 var pressabutton;
 var r = confirm("Press a button!");
@@ -113,31 +120,31 @@ if (r == true) {
 
 
 
-console.log(add(4,1));
+console.log(add(4, 1));
 //result will be 5
-function add(x,y){
-  var result = x+y;
+function add(x, y) {
+  var result = x + y;
   return result;
 }
 
 
-console.log(add(1,1));
+console.log(add(1, 1));
 //result will be 2
-  var sub = function(x,y){
-    
-    var result = x-y;
-    //result will be 0
-    return result; 
-  } 
+var sub = function (x, y) {
+
+  var result = x - y;
+  //result will be 0
+  return result;
+}
 
 var firstNum = 10;
-var secondNum = 5 ;
+var secondNum = 5;
 
-var addOutput= add(firstNum,secondNum);
+var addOutput = add(firstNum, secondNum);
 //10+5=10
-var subOutput = sub(firstNum,secondNum);
+var subOutput = sub(firstNum, secondNum);
 //10-5=5
-console.log(addOutput,subOutput);
+console.log(addOutput, subOutput);
 //in console will display 15 & 5
 
 
