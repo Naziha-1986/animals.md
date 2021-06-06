@@ -80,9 +80,9 @@ var starsFun = function () {
   var i = 0;
   while (i < x) {
 
-    output = output + "<img src='star.png' />"
+    output = output + "<img src='star.png' />";
 
-    console.log(i, output)
+    console.log(i, output);
 
     i++;
   }
@@ -92,8 +92,11 @@ var starsFun = function () {
 }
 
 
-
-
+for(var i=0 ;i<5;i++){
+    console.log(i)
+   console.log(i<5);
+    document.write("<<img src='star.png' />");
+ }
 
 var pressabutton;
 var r = confirm("Press a button!");
@@ -104,9 +107,5 @@ if (r == true) {
 
 }
 
-for(var i=0 ;i<5;i++){
-    console.log(i)
-   console.log(i<5);
-    document.write("<<img src='star.png' />");
- }
+
 
