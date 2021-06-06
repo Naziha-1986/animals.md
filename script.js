@@ -1,3 +1,5 @@
+
+
 alert("welcome every one,nice to meet you")
 
 var userName;
@@ -22,9 +24,9 @@ console.log(y == 20);
 console.log(y !== x);
 // show the opposite answer
 
-var userluckynumber =prompt("enter your lucky number?","14")
-// i wrote "14" to display in the msg as a default number
-;
+var userluckynumber = prompt("enter your lucky number?", "14")
+  // i wrote "14" to display in the msg as a default number
+  ;
 if (userluckynumber == 14) {
   alert("meeee too")
 } else {
@@ -35,17 +37,54 @@ var useryear = prompt("enter your year of birth?");
 
 if (useryear == 1986) {
   alert("just like me")
-} else if(useryear < 1986) {
+} else if (useryear < 1986) {
   alert("welcome")
-} else{
+} else {
   alert("hi")
 }
 
 
-  var pressabutton;
+
+
+
+var favAnimal = prompt(" what is your favorite animal from : tiger, lion, jaguar");
+
+while (favAnimal != "tiger" && favAnimal != "lion" && favAnimal != "jaguar") {
+  favAnimal = prompt("please enter on of :tiger , lion , jaguar");
+}
+
+document.write("<img src='ltj.jpg'/>")
+
+
+var x = prompt("how many stars do you rate my website from 0-5?"); {
+  for (var i = 0; i < 5; i++) {
+    while (x != "1" && x != "2" && x != "3" && x != "4" && x != "5") {
+      x = prompt("please enter from 0-5");
+      document.write("<img scr='star.png'/>"); i++;
+    }
+
+  }
+  console.log(i, "hi", x);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+var pressabutton;
 var r = confirm("Press a button!");
 if (r == true) {
   pressabutton = "You pressed OK!";
 } else {
   pressabutton = "You pressed Cancel!";
+
 }
+
